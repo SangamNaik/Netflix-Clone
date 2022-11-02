@@ -27,7 +27,11 @@
           >
             <i class="fas fa-play"></i>Play Trailer
           </button>
+
           <!-- <button>My List</button> -->
+          <button class="button__wishlist">
+            <i id="wishlist_icon" class="fa-regular fa-heart"></i>
+          </button>
         </div>
         <div class="featured__description"></div>
       </div>
@@ -43,7 +47,9 @@
         <div class="movies__header">
           <h2>Wishlist</h2>
         </div>
-        <div id="wishlist" class="movies__container"></div>
+        <div id="wishlist" class="movies__container">
+          <!-- Wishlisted Movies Listed Here -->
+        </div>
         <div class="movies__header">
           <h2>Trending Now</h2>
         </div>
@@ -106,13 +112,17 @@
     <script src="script.js" defer></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $(".close").click(function () {
-          $("#trailerModal iframe").attr(
-            "src",
-            $("#trailerModal iframe").attr("src")
+        $('.close').click(function () {
+          $('#trailerModal iframe').attr(
+            'src',
+            $('#trailerModal iframe').attr('src')
           );
         });
       });
     </script>
+    <script
+      src="https://kit.fontawesome.com/4118e4dc9b.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
