@@ -247,7 +247,6 @@ const addWishlistedMovie = (movieImage) => {
   let imageElement = document.createElement('img');
   imageElement.src = movieImage;
   wishlistDiv.appendChild(imageElement);
-  // console.log(movieImage);
 };
 
 const removeWishlistedMovie = (movieImage) => {
